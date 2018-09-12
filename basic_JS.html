@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic JS</title>
+    <meta charset="utf-8">
+</head>
+    
+    <body>
+        <h1 id = "countdown"></h1>
+        <br><br>
+        <button class="btn" onclick="Up()">Start!</button>
+        
+        <script>
+            var i = 0;
+            var myArray = [10,9,8,7,6,5,4,3,2,1, "happy new year?"];
+            function Up(){
+                if(i < myArray.length){
+                   document.getElementById("countdown").style.color = "red";
+                    document.getElementById("countdown").innerHTML = myArray[i];
+                    i++;
+                   }
+                window.setTimeout(Up, 600);
+            }
+        </script>
+    </body>
+</html>
